@@ -1,0 +1,942 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl" class="js">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>صاج شواء كوري متعدد الاستخدامات غير لاصق | متجر الحر — معدات التخييم والصيد الفاخرة</title>
+  <meta name="description" content="صاج شواء كوري متعدد الاستخدامات غير لاصق مع موقد محمول ودرج تجميع دهون وحقيبة نقل فاخرة. ضمان سنتين وشحن سريع لكافة أنحاء الإمارات من متجر الحر.">
+  <meta name="theme-color" content="#775b29">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="assets/img/brand/favicon.png">
+  <link rel="apple-touch-icon" href="assets/img/brand/apple-touch-icon.png">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=IBM+Plex+Sans+Arabic:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,600;0,700;0,800;1,600;1,700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/home-sections.css">
+  <link rel="stylesheet" href="assets/css/product-page.css">
+</head>
+<body class="is-pdp">
+
+<!-- Skip link -->
+<a href="#main-product" class="skip-link">تخطي إلى تفاصيل المنتج</a>
+
+<!-- ══════════════════════════════════════════
+     Announcement Bar
+     ══════════════════════════════════════════ -->
+<div class="top-banner">
+  <div class="top-banner__rotator">
+    <span class="top-banner__msg is-active" style="opacity: 1; transform: translateY(0);">
+      🔥 شحن سريع ومجاني لكافة إمارات الدولة للطلبات فوق 300 د.إ — اطلب الآن
+    </span>
+  </div>
+</div>
+
+<!-- ══════════════════════════════════════════
+     Header
+     ══════════════════════════════════════════ -->
+<header class="header" id="header">
+  <div class="header__main container">
+    <!-- Left Actions -->
+    <div class="header__actions header__actions--left">
+      <button class="icon-btn" id="btn-cart" aria-label="سلة المشتريات">
+        <svg class="icon"><use href="#i-bag"/></svg>
+        <span class="badge" id="cart-badge" data-empty="true">0</span>
+      </button>
+      <button class="icon-btn" aria-label="الحساب الشخصي">
+        <svg class="icon"><use href="#i-user"/></svg>
+      </button>
+    </div>
+
+    <!-- Center Logo -->
+    <a href="index.html" class="header__logo" aria-label="الحر — الرئيسية">
+      <img src="assets/img/brand/logo-horizontal.webp" alt="ALHOR — الحر لمستلزمات الصيد والرحلات" loading="eager">
+    </a>
+
+    <!-- Right Actions -->
+    <div class="header__actions header__actions--right">
+      <button class="icon-btn mobile-nav-toggle" id="btn-mobile-nav" aria-label="فتح القائمة الرئيسية" title="القائمة">
+        <span class="hamburger-icon" aria-hidden="true">
+          <span></span>
+          <span></span>
+          <span></span>
+        </span>
+      </button>
+      <a href="index.html?lang=en" class="icon-btn" aria-label="تغيير اللغة إلى الإنجليزية" style="font-weight: 700; font-family: 'Plus Jakarta Sans', sans-serif; font-size: 15px; text-decoration: none;">
+        EN
+      </a>
+    </div>
+  </div>
+
+  <!-- Search Row -->
+  <div class="header__search-row container">
+    <div style="position: relative; max-width: 700px; margin-inline: auto;">
+      <form class="hsearch" id="header-search" role="search" action="#" style="margin-inline: 0;">
+        <svg class="icon" aria-hidden="true"><use href="#i-search"/></svg>
+        <input type="search" id="header-search-input" placeholder="ابحث عن خيمة، موقد، سكين، كشاف..." autocomplete="off" aria-label="ابحث في المتجر">
+        <button type="submit" class="hsearch__btn">بحث</button>
+      </form>
+      <div id="hsearch-dropdown" style="position: absolute; top: 100%; left: 0; right: 0; background: var(--ivory); border-radius: var(--r-lg); box-shadow: var(--shadow-lg); z-index: 90; display: none; padding: 20px; max-height: 70vh; overflow-y: auto; margin-top: 8px;">
+        <p class="search__label" id="hsearch-label" style="margin-top: 0;">عمليات بحث شائعة</p>
+        <div class="search__results" id="hsearch-results"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Nav Menu -->
+  <nav class="header__nav container" aria-label="القائمة الرئيسية">
+    <ul>
+      <li class="has-dropdown">
+        <a href="index.html#categories" aria-haspopup="true">الأقسام <svg class="icon"><use href="#i-chevron-d"/></svg></a>
+        <div class="dropdown-menu mega">
+          <div class="mega__grid">
+            <div class="mega__col">
+              <h3 class="mega__title">⛺ التخييم والجلسات</h3>
+              <a href="index.html#best-sellers" class="mega__link">لوازم الرحلات والتخييم</a>
+              <a href="index.html#best-sellers" class="mega__link">جلسات وخيم المجالس</a>
+              <a href="index.html#best-sellers" class="mega__link">لوازم السفر</a>
+              <a href="index.html#best-sellers" class="mega__link">معدات السيارات</a>
+            </div>
+            <div class="mega__col">
+              <h3 class="mega__title">🍳 المطبخ والشواء</h3>
+              <a href="index.html#best-sellers" class="mega__link">المواقد ولوازم الشواء</a>
+              <a href="index.html#best-sellers" class="mega__link">مطبخ البر</a>
+              <a href="index.html#collection-2" class="mega__link">ركن القهوة والشاي</a>
+            </div>
+            <div class="mega__col">
+              <h3 class="mega__title">🦅 المقناص والأدوات</h3>
+              <a href="index.html#best-sellers" class="mega__link">لوازم الصيد والمقناص</a>
+              <a href="index.html#best-sellers" class="mega__link">السكاكين والمسنات</a>
+              <a href="index.html#best-sellers" class="mega__link">العصي التراثية</a>
+            </div>
+            <div class="mega__col">
+              <h3 class="mega__title">💡 إضاءة وإكسسوارات</h3>
+              <a href="index.html#best-sellers" class="mega__link">الكشافات والإضاءة</a>
+              <a href="index.html#best-sellers" class="mega__link">ساعات وكابات ونظارات</a>
+              <a href="index.html#best-sellers" class="mega__link">ألعاب الكشتات</a>
+            </div>
+          </div>
+          <a href="index.html#sale" class="mega__promo">
+            <span>🔥 عروض البر الكبرى — خصومات حتى 45%</span>
+            <b>تسوق الآن ←</b>
+          </a>
+        </div>
+      </li>
+      <li><a href="index.html#sale">عروض حصرية 🔥</a></li>
+      <li><a href="index.html#best-sellers">الأكثر مبيعاً</a></li>
+      <li><a href="index.html#collections">مجموعات الكشتة</a></li>
+      <li><a href="index.html#brands">الماركات</a></li>
+      <li><a href="index.html#story">عن الحر</a></li>
+    </ul>
+  </nav>
+</header>
+
+<!-- ══════════════════════════════════════════
+     Breadcrumbs
+     ══════════════════════════════════════════ -->
+<div class="pdp-breadcrumb-bar">
+  <div class="container">
+    <ol class="pdp-breadcrumbs">
+      <li><a href="index.html">الرئيسية</a><span class="sep">/</span></li>
+      <li><a href="index.html#best-sellers">المواقد ولوازم الشواء</a><span class="sep">/</span></li>
+      <li class="current" aria-current="page">صاج شواء كوري متعدد الاستخدامات غير لاصق</li>
+    </ol>
+  </div>
+</div>
+
+<!-- ══════════════════════════════════════════
+     Main Product Section
+     ══════════════════════════════════════════ -->
+<main id="main-product" class="pdp-section">
+  <div class="container">
+    <div class="pdp-grid">
+
+      <!-- ─── Gallery Column ─── -->
+      <div class="pdp-gallery-wrap">
+        <!-- Main Media Frame -->
+        <div class="pdp-gallery-main" id="pdp-main-frame">
+          <div class="pdp-gallery-badges">
+            <span class="pdp-badge pdp-badge--hot">الأكثر طلباً 🔥</span>
+            <span class="pdp-badge pdp-badge--save" id="pdp-save-badge">وفر 71 د.إ</span>
+          </div>
+
+          <img id="pdp-main-img" src="assets/img/products/gas-griddle.webp" alt="صاج شواء كوري متعدد الاستخدامات غير لاصق مع موقد محمول" loading="eager">
+
+          <button type="button" class="pdp-gallery-zoom-btn" id="pdp-zoom-btn" aria-label="تكبير الصورة">
+            <svg class="icon"><use href="#i-search"/></svg>
+          </button>
+          <span class="pdp-gallery-count" id="pdp-img-count">1 / 4</span>
+        </div>
+
+        <!-- Thumbnails Grid -->
+        <div class="pdp-thumbs-row" role="tablist" aria-label="معرض صور المنتج">
+          <button type="button" class="pdp-thumb is-active" data-full="assets/img/products/gas-griddle.webp" aria-label="الصورة 1: الموقد والصاج مع خرطوم الغاز">
+            <img src="assets/img/products/gas-griddle.webp" alt="الموقد والصاج" loading="lazy">
+          </button>
+          <button type="button" class="pdp-thumb" data-full="assets/img/products/griddle-cooking.jpg" aria-label="الصورة 2: تجربة الشواء والطهي أثناء التخييم البري">
+            <img src="assets/img/products/griddle-cooking.jpg" alt="الشواء أثناء التخييم" loading="lazy">
+          </button>
+          <button type="button" class="pdp-thumb" data-full="assets/img/products/griddle-angle.jpg" aria-label="الصورة 3: زاوية جانبية وجودة طلاء الجرانيت غير اللاصق">
+            <img src="assets/img/products/griddle-angle.jpg" alt="زاوية جانبية ودقة التصنيع" loading="lazy">
+          </button>
+          <button type="button" class="pdp-thumb" data-full="assets/img/products/griddle-package.jpg" aria-label="الصورة 4: مع حقيبة النقل والملحقات الكاملة">
+            <img src="assets/img/products/griddle-package.jpg" alt="حقيبة النقل والملحقات" loading="lazy">
+          </button>
+        </div>
+
+        <!-- Trust Badges under gallery -->
+        <div class="pdp-gallery-guarantees">
+          <div class="pdp-guar-item">
+            <div class="pdp-guar-icon"><svg class="icon"><use href="#i-shield"/></svg></div>
+            <strong>تصنيع كوري أصلي</strong>
+            <span>خامات متينة مختبرة بالبر</span>
+          </div>
+          <div class="pdp-guar-item">
+            <div class="pdp-guar-icon"><svg class="icon"><use href="#i-badge-check"/></svg></div>
+            <strong>طلاء غير لاصق 100%</strong>
+            <span>خالي من PFOA الصحي</span>
+          </div>
+          <div class="pdp-guar-item">
+            <div class="pdp-guar-icon"><svg class="icon"><use href="#i-truck"/></svg></div>
+            <strong>تغليف مصفح آمن</strong>
+            <span>شحن سريع لجميع الإمارات</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- ─── Product Details Column ─── -->
+      <div class="pdp-info">
+
+        <!-- Meta Top -->
+        <div class="pdp-meta-top">
+          <span class="pdp-brand-tag">الحر كولكشن | ALHOR COLLECTION</span>
+          <span class="pdp-stock-status">
+            <span class="pdp-stock-dot"></span>
+            متوفر في المخزون (جاهز للشحن الفوري)
+          </span>
+        </div>
+
+        <!-- Title -->
+        <h1 class="pdp-title">صاج شواء كوري متعدد الاستخدامات غير لاصق مع موقد محمول ودرج تجميع دهون</h1>
+
+        <!-- SKU & Category -->
+        <div class="pdp-sku-row">
+          <span>رمز المنتج: <strong>ALH-KOR-GRD40</strong></span>
+          <span>•</span>
+          <span>التصنيف: <strong>المواقد ولوازم الشواء</strong></span>
+        </div>
+
+        <!-- Price Wrap -->
+        <div class="pdp-price-wrap">
+          <div class="pdp-price-current" id="pdp-price-now">149 <small>د.إ</small></div>
+          <s class="pdp-price-old" id="pdp-price-old">220 د.إ</s>
+          <span class="pdp-save-badge">خصم 32%</span>
+          <div class="pdp-tax-note">السعر شامل ضريبة القيمة المضافة 5%</div>
+        </div>
+
+        <!-- Installments (Tabby & Tamara) -->
+        <div class="pdp-installments">
+          <div class="pdp-inst-row">
+            <div class="pdp-inst-text">
+              قسّم فاتورتك على 4 دفعات بدون فوائد بقيمة <strong id="pdp-tabby-val">37.25 د.إ</strong>
+            </div>
+            <div class="pdp-inst-logos">
+              <img src="assets/img/payment%20methods/tabby-pay.svg" alt="Tabby" loading="lazy">
+              <img src="assets/img/payment%20methods/tamara-pay.svg" alt="Tamara" loading="lazy">
+            </div>
+          </div>
+          <button type="button" class="pdp-inst-btn" onclick="alert('متوافق مع تابي وتمارا: قسّم طلبك على 4 دفعات شهرية متساوية بدون أي فوائد إضافية أو رسوم تأخير عند الدفع.')">
+            طريقة التقسيط والشروط ←
+          </button>
+        </div>
+
+        <!-- Urgency Alert -->
+        <div class="pdp-urgency">
+          <svg class="icon"><use href="#i-gift"/></svg>
+          <span>🔥 تم طلب هذا المنتج 42 مرة خلال اليوم — متبقي كمية محدودة في مستودعات دبي!</span>
+        </div>
+
+        <!-- Options: Size -->
+        <div class="pdp-option-group">
+          <label class="pdp-option-label">
+            <span>القطر والحجم:</span>
+            <span class="pdp-option-selected-val" id="pdp-selected-size">34 سم (قياسي)</span>
+          </label>
+          <div class="pdp-chips-grid">
+            <div class="pdp-chip-opt is-selected" data-opt-size="34 سم (قياسي)" data-extra="0">
+              <span>قطر 34 سم — قياسي (3-5 أشخاص)</span>
+            </div>
+            <div class="pdp-chip-opt" data-opt-size="38 سم (عائلي كبير)" data-extra="40">
+              <span>قطر 38 سم — عائلي كبير (6-8 أشخاص)</span>
+              <span class="pdp-chip-extra">+40 د.إ</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Options: Color -->
+        <div class="pdp-option-group">
+          <label class="pdp-option-label">
+            <span>لون القاعدة:</span>
+            <span class="pdp-option-selected-val" id="pdp-selected-color">برتقالي بري كلاسيكي</span>
+          </label>
+          <div class="pdp-chips-grid">
+            <div class="pdp-chip-opt is-selected" data-opt-color="برتقالي بري كلاسيكي">
+              <span style="width: 14px; height: 14px; border-radius: 50%; background: #e2712f; display: inline-block;"></span>
+              <span>برتقالي بري (Signature Orange)</span>
+            </div>
+            <div class="pdp-chip-opt" data-opt-color="رمادي صحراوي تكتيكي">
+              <span style="width: 14px; height: 14px; border-radius: 50%; background: #4a4d52; display: inline-block;"></span>
+              <span>رمادي تكتيكي (Tactical Grey)</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Quantity & Add to Cart -->
+        <div class="pdp-action-box">
+          <div class="pdp-qty-row">
+            <div class="pdp-qty-picker">
+              <button type="button" class="pdp-qty-btn" id="pdp-qty-minus" aria-label="إنقاص الكمية">
+                <svg class="icon"><use href="#i-minus"/></svg>
+              </button>
+              <input type="number" id="pdp-qty" class="pdp-qty-input" value="1" min="1" max="99" aria-label="الكمية">
+              <button type="button" class="pdp-qty-btn" id="pdp-qty-plus" aria-label="زيادة الكمية">
+                <svg class="icon"><use href="#i-plus"/></svg>
+              </button>
+            </div>
+
+            <button type="button" class="pdp-btn-add" id="pdp-btn-add">
+              <svg class="icon"><use href="#i-bag"/></svg>
+              <span>أضف إلى السلة</span>
+            </button>
+          </div>
+
+          <!-- Buy Now Direct -->
+          <button type="button" class="pdp-btn-buy-now" id="pdp-btn-buy-now">
+            <span>شراء فوري عبر Apple Pay / البطاقة</span>
+          </button>
+
+          <!-- Secondary Actions -->
+          <div class="pdp-secondary-actions">
+            <button type="button" class="pdp-sec-btn" id="pdp-btn-wish" aria-label="إضافة للمفضلة">
+              <svg class="icon"><use href="#i-heart"/></svg>
+              <span>إضافة للمفضلة</span>
+            </button>
+            <button type="button" class="pdp-sec-btn" id="pdp-btn-share" aria-label="مشاركة المنتج">
+              <svg class="icon"><use href="#i-arrow-left"/></svg>
+              <span>مشاركة الرابط</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- Features Bullets -->
+        <div class="pdp-features-bullets">
+          <div class="pdp-bullet-item">
+            <div class="pdp-bullet-icon"><svg class="icon"><use href="#i-truck"/></svg></div>
+            <div><strong>شحن سريع ومجاني:</strong> توصيل خلال 24-48 ساعة لجميع مدن الإمارات للطلبات فوق 300 د.إ.</div>
+          </div>
+          <div class="pdp-bullet-item">
+            <div class="pdp-bullet-icon"><svg class="icon"><use href="#i-shield"/></svg></div>
+            <div><strong>ضمان ذهبي سنتين:</strong> استبدال مباشر ضد أي عيوب تصنيعية مع دعم فني متواصل.</div>
+          </div>
+          <div class="pdp-bullet-item">
+            <div class="pdp-bullet-icon"><svg class="icon"><use href="#i-card"/></svg></div>
+            <div><strong>دفع مرن وآمن:</strong> بطاقات بنكية، مدى، Apple Pay، أو أقساط ميسرة عبر تابي وتمارا.</div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+</main>
+
+<!-- ══════════════════════════════════════════
+     Detailed Product Tabs Section
+     ══════════════════════════════════════════ -->
+<section class="pdp-tabs-section">
+  <div class="container">
+
+    <!-- Tabs Nav -->
+    <div class="pdp-tabs-nav" role="tablist">
+      <button type="button" class="pdp-tab-btn is-active" data-tab="tab-overview" role="tab">نظرة عامة والمميزات</button>
+      <button type="button" class="pdp-tab-btn" data-tab="tab-specs" role="tab">المواصفات الفنية</button>
+      <button type="button" class="pdp-tab-btn" data-tab="tab-box" role="tab">محتويات الصندوق</button>
+      <button type="button" class="pdp-tab-btn" data-tab="tab-care" role="tab">طريقة الاستخدام والعناية</button>
+      <button type="button" class="pdp-tab-btn" data-tab="tab-shipping" role="tab">الشحن والضمان</button>
+    </div>
+
+    <!-- Tab 1: Overview -->
+    <div class="pdp-tab-pane is-active" id="tab-overview" role="tabpanel">
+      <div class="pdp-feat-grid">
+        <div class="pdp-feat-card">
+          <div class="pdp-feat-card__icon"><svg class="icon"><use href="#i-badge-check"/></svg></div>
+          <div class="pdp-feat-card__content">
+            <h4>طلاء جرانيت كوري غير لاصق بـ 6 طبقات</h4>
+            <p>يمنع التصاق اللحوم والأسماك والخضار كلياً، ويسمح بالطهي الصحي بأقل كمية زيت ممكنة دون انبعاث أبخرة سامة، مع سهولة تنظيف فورية بمسحة منديل واحدة.</p>
+          </div>
+        </div>
+
+        <div class="pdp-feat-card">
+          <div class="pdp-feat-card__icon"><svg class="icon"><use href="#i-grid"/></svg></div>
+          <div class="pdp-feat-card__content">
+            <h4>درج ذكي لتصريف وتجميع الزيوت الزائدة</h4>
+            <p>تصميم مبتكر بسطح مائل قليلاً يوجه الدهون نحو فتحة تصريف مخصصة لتسقط داخل درج أمامي سفلي قابل للسحب والإفراغ بسهولة، لحماية صحتك ومنع الأدخنة المزعجة.</p>
+          </div>
+        </div>
+
+        <div class="pdp-feat-card">
+          <div class="pdp-feat-card__icon"><svg class="icon"><use href="#i-gift"/></svg></div>
+          <div class="pdp-feat-card__content">
+            <h4>توزيع حراري متجانس فائق الكفاءة</h4>
+            <p>قاعدة ألمنيوم مصبوب مصممة بحلقات توزيع حرارية دائرية تضمن نضوج شرائح اللحم والمشويات بنفس الدرجة في جميع الزوايا، وتوفر استهلاك الغاز بنسبة تصل إلى 30%.</p>
+          </div>
+        </div>
+
+        <div class="pdp-feat-card">
+          <div class="pdp-feat-card__icon"><svg class="icon"><use href="#i-shield"/></svg></div>
+          <div class="pdp-feat-card__content">
+            <h4>أرجل معدنية مانعة للانزلاق وخرطوم مدرع</h4>
+            <p>هيكل صندوقي قوي بأرجل عريضة قابلة للتعديل للثبات التام على طاولات الرحلات أو الرمال، مع خرطوم غاز ستانلس ستيل مدرع ومحبس نحاسي محكم لمنع أي تسريب.</p>
+          </div>
+        </div>
+      </div>
+
+      <div style="background: var(--ivory); padding: 24px; border-radius: var(--r); border: 1px solid var(--line); line-height: 1.8; color: var(--ink-2); font-size: 14.5px;">
+        <h4 style="margin: 0 0 10px; font-size: 17px; color: var(--ink); font-weight: 700;">رفيقك الأمثل في كشتات البر والرحلات البحرية</h4>
+        <p style="margin: 0;">
+          صُمم هذا الصاج الكوري خصيصاً لعشاق المقناص والرحلات الصحراوية الذين لا يقبلون بأقل من تجربة شواء متكاملة وفخمة في قلب الطبيعة. يتميز بقدرته الفائقة على تحمل درجات الحرارة العالية وسرعة الاستجابة، مما يتيح لك إعداد وجبات الشواء الكورية، البرجر الطازج، المشاوي التراثية، وبيض الإفطار البري بكل يسر وسرعة. يجمع بين خفة الوزن وسهولة النقل داخل حقيبته القماشية المبطنة دون أن يشغل حيزاً في صندوق سيارتك.
+        </p>
+      </div>
+    </div>
+
+    <!-- Tab 2: Specs -->
+    <div class="pdp-tab-pane" id="tab-specs" role="tabpanel">
+      <table class="pdp-specs-table">
+        <tbody>
+          <tr>
+            <th>بلد المنشأ</th>
+            <td>كوريا الجنوبية (South Korea)</td>
+          </tr>
+          <tr>
+            <th>خامة الصاج</th>
+            <td>ألمنيوم مصبوب عالي الكثافة (Die-Cast Aluminum) بسماكة 4.5 مم</td>
+          </tr>
+          <tr>
+            <th>نوع الطلاء</th>
+            <td>ميغاستون جرانيت كوري مانع للالتصاق 6 طبقات (خالٍ من PFOA والرصاص)</td>
+          </tr>
+          <tr>
+            <th>أبعاد المنتج</th>
+            <td>34 سم (عرض) × 34 سم (عمق) × 14 سم (ارتفاع)</td>
+          </tr>
+          <tr>
+            <th>الوزن الإجمالي</th>
+            <td>2.85 كجم (سهل الحمل والتخزين)</td>
+          </tr>
+          <tr>
+            <th>نوع الوقود المتوافق</th>
+            <td>أسطوانات غاز البوتان المحمولة أو خراطيش الغاز القياسية للرحلات</td>
+          </tr>
+          <tr>
+            <th>طول خرطوم الغاز</th>
+            <td>85 سم ستانلس ستيل مدرع ضد الحرارة والقوارض</td>
+          </tr>
+          <tr>
+            <th>درجة تحمل الحرارة</th>
+            <td>تصل إلى 350 درجة مئوية مع الحفاظ على كفاءة الطلاء</td>
+          </tr>
+          <tr>
+            <th>الضمان</th>
+            <td>ضمان ذهبي سنتين من متجر الحر ضد عيوب التصنيع</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- Tab 3: What's in the Box -->
+    <div class="pdp-tab-pane" id="tab-box" role="tabpanel">
+      <div class="pdp-box-grid">
+        <div class="pdp-box-item">
+          <svg class="icon"><use href="#i-check"/></svg>
+          <span>صاج الشواء الكوري غير اللاصق (مقاس 34 سم)</span>
+        </div>
+        <div class="pdp-box-item">
+          <svg class="icon"><use href="#i-check"/></svg>
+          <span>وحدة الموقد المحمولة مع درج تصريف الدهون المدمج</span>
+        </div>
+        <div class="pdp-box-item">
+          <svg class="icon"><use href="#i-check"/></svg>
+          <span>خرطوم غاز ستانلس ستيل مدرع مع محبس أمان نحاسي</span>
+        </div>
+        <div class="pdp-box-item">
+          <svg class="icon"><use href="#i-check"/></svg>
+          <span>حقيبة حمل وتخزين تكتيكية مبطنة من قماش الكانفاس المتين</span>
+        </div>
+        <div class="pdp-box-item">
+          <svg class="icon"><use href="#i-check"/></svg>
+          <span>قفاز سيليكون عازل للحرارة لحماية اليدين أثناء الطهي</span>
+        </div>
+        <div class="pdp-box-item">
+          <svg class="icon"><use href="#i-check"/></svg>
+          <span>ملقط لحم ستانلس ستيل فاخر + كتيب إرشادات الاستخدام العربي</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Tab 4: Care Instructions -->
+    <div class="pdp-tab-pane" id="tab-care" role="tabpanel">
+      <div class="pdp-care-list">
+        <div class="pdp-care-item">
+          <div class="pdp-care-num">1</div>
+          <div class="pdp-care-text">
+            <h5>الاستخدام للمرة الأولى:</h5>
+            <p>اغسل الصاج بماء دافئ وصابون لطيف باستخدام إسفنجة ناعمة، ثم جففه تماماً وامسح السطح ببضع قطرات من زيت الطهي قبل تسخينه للمرة الأولى لتعزيز طبقة الحماية.</p>
+          </div>
+        </div>
+
+        <div class="pdp-care-item">
+          <div class="pdp-care-num">2</div>
+          <div class="pdp-care-text">
+            <h5>أدوات الطهي الموصى بها:</h5>
+            <p>يُفضل استخدام ملاعق وملاقط السيليكون أو الخشب المعالج، وتجنب استخدام السكاكين أو الأدوات المعدنية الحادة مباشرة على سطح الصاج لحماية الطلاء من الخدش.</p>
+          </div>
+        </div>
+
+        <div class="pdp-care-item">
+          <div class="pdp-care-num">3</div>
+          <div class="pdp-care-text">
+            <h5>التنظيف بعد انتهاء الرحلة:</h5>
+            <p>اترك الصاج يبرد تماماً قبل غسله (تجنب صب الماء البارد على الصاج وهو ساخن فوراً). يمكنك مسحه بمناديل ورقية سميكة أثناء الطهي، أو غسله بإسفنجة ناعمة.</p>
+          </div>
+        </div>
+
+        <div class="pdp-care-item">
+          <div class="pdp-care-num">4</div>
+          <div class="pdp-care-text">
+            <h5>التخزين والحفظ:</h5>
+            <p>احفظ المنتج بعد جفافه تماماً داخل حقيبته القماشية المبطنة المرفقة، وضعه في مكان جاف داخل السيارة أو مخزن أدوات الرحلات.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Tab 5: Shipping & Warranty -->
+    <div class="pdp-tab-pane" id="tab-shipping" role="tabpanel">
+      <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 24px;">
+        <div style="background: var(--ivory); padding: 24px; border-radius: var(--r); border: 1px solid var(--line);">
+          <h4 style="font-size: 16px; font-weight: 700; color: var(--ink); margin: 0 0 12px; display: flex; align-items: center; gap: 8px;">
+            <svg class="icon" style="color: var(--camel-gold);"><use href="#i-truck"/></svg>
+            الشحن والتوصيل السريع
+          </h4>
+          <ul style="padding-inline-start: 20px; margin: 0; line-height: 1.8; color: var(--ink-2); font-size: 14px;">
+            <li>توصيل سريع خلال 24 ساعة في إمارة دبي والشارقة وعجمان.</li>
+            <li>توصيل خلال 24 - 48 ساعة في أبوظبي والعين ورأس الخيمة والفجيرة وأم القيوين.</li>
+            <li>شحن مجاني بالكامل لكافة الطلبات التي تتجاوز قيمتها 300 د.إ.</li>
+            <li>تتبع مباشر لحالة الشحنة عبر رسائل SMS وواتساب فور انطلاق المندوب.</li>
+          </ul>
+        </div>
+
+        <div style="background: var(--ivory); padding: 24px; border-radius: var(--r); border: 1px solid var(--line);">
+          <h4 style="font-size: 16px; font-weight: 700; color: var(--ink); margin: 0 0 12px; display: flex; align-items: center; gap: 8px;">
+            <svg class="icon" style="color: var(--camel-gold);"><use href="#i-shield"/></svg>
+            الضمان والاسترجاع الذهبي
+          </h4>
+          <ul style="padding-inline-start: 20px; margin: 0; line-height: 1.8; color: var(--ink-2); font-size: 14px;">
+            <li>ضمان شامل لمدة سنتين كاملتين ضد أي خلل في الصمام، الخرطوم، أو الطلاء.</li>
+            <li>استرجاع أو استبدال فوري خلال 14 يوماً من الاستلام في حال عدم مطابقة المنتج.</li>
+            <li>فريق خدمة عملاء متواجد على مدار الساعة لتقديم الدعم الفني وقطع الغيار.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════
+     Frequently Asked Questions (FAQ)
+     ══════════════════════════════════════════ -->
+<section class="container" style="padding: 50px 0 20px;">
+  <h2 class="pdp-related-title">الأسئلة الشائعة حول الصاج الكوري</h2>
+  <p class="pdp-related-sub">كل ما تحتاج معرفته قبل اقتناء صاج الشواء الفاخر لمغامرتك القادمة</p>
+
+  <div class="pdp-faq-wrap">
+    <div class="pdp-faq-item is-open">
+      <button type="button" class="pdp-faq-trigger">
+        <span>هل يعمل الصاج على أسطوانات الغاز الزرقاء المنزلية أم فقط علب كشتات الغاز؟</span>
+        <svg class="icon"><use href="#i-chevron-d"/></svg>
+      </button>
+      <div class="pdp-faq-body">
+        يعمل الصاج بكفاءة تامة على علب غاز الرحلات القياسية (غاز البوتان 220-250 جم) عبر المحول المباشر، كما يتوافق مع أسطوانات الغاز الكبيرة عبر منظم ضغط منخفض قياسي.
+      </div>
+    </div>
+
+    <div class="pdp-faq-item">
+      <button type="button" class="pdp-faq-trigger">
+        <span>هل يحتاج الصاج إلى كمية زيت كبيرة للشواء والطهي؟</span>
+        <svg class="icon"><use href="#i-chevron-d"/></svg>
+      </button>
+      <div class="pdp-faq-body">
+        إطلاقاً، بفضل طلاء الميغاستون الجرانيتي الكوري متعدد الطبقات، يمكنك الطهي دون أي قطرة زيت أو بمسحة خفيفة جداً، مع ضمان عدم التصاق اللحوم أو الأطعمة إطلاقاً.
+      </div>
+    </div>
+
+    <div class="pdp-faq-item">
+      <button type="button" class="pdp-faq-trigger">
+        <span>كيف يتم التخلص من الزيوت والدهون أثناء الشواء؟</span>
+        <svg class="icon"><use href="#i-chevron-d"/></svg>
+      </button>
+      <div class="pdp-faq-body">
+        يحتوي الصاج على مجاري انحدار دقيقة وفتحة تصريف أمامية توجه الشحوم والدهون الزائدة مباشرة إلى درج سحب سفلي قابل للإزالة والغسل دون اتساخ مكان الجلسة.
+      </div>
+    </div>
+
+    <div class="pdp-faq-item">
+      <button type="button" class="pdp-faq-trigger">
+        <span>هل يتوفر المنتج مع حقيبة للنقل والحفظ؟</span>
+        <svg class="icon"><use href="#i-chevron-d"/></svg>
+      </button>
+      <div class="pdp-faq-body">
+        نعم، يأتي الصاج والموقد مرفقاً بحقيبة كانفاس تكتيكية فاخرة مبطنة لحمايته من الصدمات والغبار، بالإضافة إلى قفاز سيليكون عازل وملقط شواء هدية مجانية.
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════
+     Related Products / Complete the Kit
+     ══════════════════════════════════════════ -->
+<section class="pdp-related-section">
+  <div class="container">
+    <h2 class="pdp-related-title">تجهيزات يُوصى بها لاكتمال جلستك البرية</h2>
+    <p class="pdp-related-sub">اخترنا لك معدات متوافقة تم اختيارها بعناية من كولكشن الحر</p>
+
+    <div class="bs-grid">
+
+      <!-- Related 1 -->
+      <article class="pcard bs-card reveal" data-cat="kitchen" data-id="p1" data-name="موقد غاز محمول مزدوج مع درع حماية الرياح" data-price="185" data-oldprice="260" data-catname="مطبخ البر" data-img="assets/img/products/gas-stove.webp">
+        <div class="pcard__media">
+          <a href="index.html#best-sellers"><img src="assets/img/products/gas-stove.webp" alt="موقد غاز محمول مزدوج مع درع حماية الرياح" loading="lazy"></a>
+          <button class="wish" aria-pressed="false" aria-label="أضف للمفضلة" data-wish><svg class="icon"><use href="#i-heart"/></svg></button>
+        </div>
+        <div class="pcard__body">
+          <span class="pcard__cat">مطبخ البر</span>
+          <h3 class="pcard__name"><a href="index.html#best-sellers">موقد غاز محمول مزدوج مع درع حماية الرياح</a></h3>
+          <div class="pcard__foot">
+            <div class="price"><span class="price__now">185 <small>د.إ</small></span><s class="price__old">260 د.إ</s></div>
+            <button class="add-btn" data-add aria-label="أضف للسلة"><svg class="icon i-default"><use href="#i-plus"/></svg><svg class="icon i-check"><use href="#i-check"/></svg></button>
+          </div>
+        </div>
+      </article>
+
+      <!-- Related 2 -->
+      <article class="pcard bs-card reveal" data-cat="camp" data-id="p11" data-name="طاولة شبك حديدية قابلة للطي مقاومة لحرارة الجمر" data-price="165" data-oldprice="230" data-catname="لوازم الرحلات والتخييم" data-img="assets/img/products/mesh-table.webp">
+        <div class="pcard__media">
+          <a href="index.html#best-sellers"><img src="assets/img/products/mesh-table.webp" alt="طاولة شبك حديدية قابلة للطي مقاومة لحرارة الجمر" loading="lazy"></a>
+          <button class="wish" aria-pressed="false" aria-label="أضف للمفضلة" data-wish><svg class="icon"><use href="#i-heart"/></svg></button>
+        </div>
+        <div class="pcard__body">
+          <span class="pcard__cat">لوازم الرحلات والتخييم</span>
+          <h3 class="pcard__name"><a href="index.html#best-sellers">طاولة شبك حديدية قابلة للطي مقاومة لحرارة الجمر</a></h3>
+          <div class="pcard__foot">
+            <div class="price"><span class="price__now">165 <small>د.إ</small></span><s class="price__old">230 د.إ</s></div>
+            <button class="add-btn" data-add aria-label="أضف للسلة"><svg class="icon i-default"><use href="#i-plus"/></svg><svg class="icon i-check"><use href="#i-check"/></svg></button>
+          </div>
+        </div>
+      </article>
+
+      <!-- Related 3 -->
+      <article class="pcard bs-card reveal" data-cat="kitchen" data-id="p12" data-name="حافظة ثلج ومشروبات تكتيكية عازلة للحرارة 48 ساعة" data-price="159" data-oldprice="220" data-catname="مطبخ البر" data-img="assets/img/products/cooler-bag.webp">
+        <div class="pcard__media">
+          <a href="index.html#best-sellers"><img src="assets/img/products/cooler-bag.webp" alt="حافظة ثلج ومشروبات تكتيكية عازلة للحرارة 48 ساعة" loading="lazy"></a>
+          <button class="wish" aria-pressed="false" aria-label="أضف للمفضلة" data-wish><svg class="icon"><use href="#i-heart"/></svg></button>
+        </div>
+        <div class="pcard__body">
+          <span class="pcard__cat">مطبخ البر</span>
+          <h3 class="pcard__name"><a href="index.html#best-sellers">حافظة ثلج ومشروبات تكتيكية عازلة للحرارة 48 ساعة</a></h3>
+          <div class="pcard__foot">
+            <div class="price"><span class="price__now">159 <small>د.إ</small></span><s class="price__old">220 د.إ</s></div>
+            <button class="add-btn" data-add aria-label="أضف للسلة"><svg class="icon i-default"><use href="#i-plus"/></svg><svg class="icon i-check"><use href="#i-check"/></svg></button>
+          </div>
+        </div>
+      </article>
+
+      <!-- Related 4 -->
+      <article class="pcard bs-card reveal" data-cat="camp" data-id="p10" data-name="صندوق تخزين وتنظيم تكتيكي مقاوم للكسر والماء" data-price="110" data-oldprice="155" data-catname="لوازم الرحلات والتخييم" data-img="assets/img/products/storage-box.webp">
+        <div class="pcard__media">
+          <a href="index.html#best-sellers"><img src="assets/img/products/storage-box.webp" alt="صندوق تخزين وتنظيم تكتيكي مقاوم للكسر والماء" loading="lazy"></a>
+          <button class="wish" aria-pressed="false" aria-label="أضف للمفضلة" data-wish><svg class="icon"><use href="#i-heart"/></svg></button>
+        </div>
+        <div class="pcard__body">
+          <span class="pcard__cat">لوازم الرحلات والتخييم</span>
+          <h3 class="pcard__name"><a href="index.html#best-sellers">صندوق تخزين وتنظيم تكتيكي مقاوم للكسر والماء</a></h3>
+          <div class="pcard__foot">
+            <div class="price"><span class="price__now">110 <small>د.إ</small></span><s class="price__old">155 د.إ</s></div>
+            <button class="add-btn" data-add aria-label="أضف للسلة"><svg class="icon i-default"><use href="#i-plus"/></svg><svg class="icon i-check"><use href="#i-check"/></svg></button>
+          </div>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════
+     Sticky Mobile Bottom Purchase Bar
+     ══════════════════════════════════════════ -->
+<aside class="pdp-mobile-bar" aria-label="شريط الشراء السريع للجوال">
+  <div class="pdp-mobile-bar__info">
+    <span class="pdp-mobile-bar__title">صاج شواء كوري غير لاصق</span>
+    <span class="pdp-mobile-bar__price" id="pdp-mobile-price">149 <small>د.إ</small></span>
+  </div>
+  <button type="button" class="pdp-mobile-bar__btn" id="pdp-mobile-add">
+    <svg class="icon"><use href="#i-bag"/></svg>
+    <span>أضف للسلة</span>
+  </button>
+</aside>
+
+<!-- ══════════════════════════════════════════
+     Lightbox Zoom Modal
+     ══════════════════════════════════════════ -->
+<div class="pdp-lightbox" id="pdp-lightbox" role="dialog" aria-label="تكبير صورة المنتج">
+  <button type="button" class="pdp-lightbox__close" id="pdp-lightbox-close" aria-label="إغلاق">
+    <svg class="icon"><use href="#i-x"/></svg>
+  </button>
+  <img id="pdp-lightbox-img" class="pdp-lightbox__img" src="assets/img/products/gas-griddle.webp" alt="تكبير صورة الصاج الكوري">
+</div>
+
+<!-- ══════════════════════════════════════════
+     Footer
+     ══════════════════════════════════════════ -->
+<footer class="footer" id="footer-contact">
+  <div class="container footer__grid">
+    <div class="footer__brand">
+      <a href="index.html"><img src="assets/img/brand/logo-horizontal.webp" alt="الحر"></a>
+      <p>الحر لمستلزمات الصيد والرحلات — فخامة التجربة البرية</p>
+      <div class="socials">
+        <a href="#" aria-label="تويتر (إكس)"><svg class="icon"><use href="#i-x-social"/></svg></a>
+        <a href="https://www.instagram.com/alhor_uae" target="_blank" rel="noopener" aria-label="انستغرام"><svg class="icon"><use href="#i-instagram"/></svg></a>
+        <a href="#" aria-label="سناب شات"><svg class="icon"><use href="#i-snapchat"/></svg></a>
+        <a href="https://www.tiktok.com/@alhor_uae" target="_blank" rel="noopener" aria-label="تيك توك"><svg class="icon"><use href="#i-tiktok"/></svg></a>
+      </div>
+    </div>
+
+    <div class="footer__col">
+      <summary>أقسام المتجر</summary>
+      <ul>
+        <li><a href="index.html#categories">لوازم الرحلات و التخييم</a></li>
+        <li><a href="index.html#categories">المواقد و لوازم الشواء</a></li>
+        <li><a href="index.html#categories">مطبخ البر</a></li>
+        <li><a href="index.html#categories">السكاكين و المسنات</a></li>
+        <li><a href="index.html#categories">الكشافات و الإضاءة</a></li>
+        <li><a href="index.html#categories">جلسات و خيم المجالس</a></li>
+      </ul>
+    </div>
+
+    <div class="footer__col">
+      <summary>روابط مهمة</summary>
+      <ul>
+        <li><a href="index.html#sale">العروض الحصرية</a></li>
+        <li><a href="index.html#best-sellers">الأكثر مبيعاً</a></li>
+        <li><a href="index.html#bundles">بكجات التوفير</a></li>
+        <li><a href="index.html#story">عن علامة الحر</a></li>
+        <li><a href="#">سياسة الضمان والاسترجاع</a></li>
+        <li><a href="#">الشحن والتوصيل</a></li>
+      </ul>
+    </div>
+
+    <div class="footer__col">
+      <summary>خدمة العملاء</summary>
+      <p style="color:var(--muted); font-size:14px; margin-bottom:12px;">يسعدنا تواصلكم للإجابة عن أي استفسار أو طلب استشارة خاصة بمعدات البر:</p>
+      <a href="https://wa.me/971600565550" target="_blank" rel="noopener" style="display:inline-flex; align-items:center; gap:8px; color:var(--camel-gold); font-weight:700; text-decoration:none;">
+        <svg class="icon" style="width:18px; height:18px;"><use href="#i-headphones"/></svg>
+        +971 600 565550
+      </a>
+    </div>
+  </div>
+
+  <div class="container footer__bottom">
+    <p>© 2026 متجر الحر لمستلزمات الصيد والرحلات. جميع الحقوق محفوظة.</p>
+    <ul class="pay">
+      <li><img src="assets/img/payment%20methods/visa-pay.svg" alt="Visa" style="height: 28px; width: auto; object-fit: contain;"></li>
+      <li><img src="assets/img/payment%20methods/master-card-pay.svg" alt="Mastercard" style="height: 28px; width: auto; object-fit: contain;"></li>
+      <li><img src="assets/img/payment%20methods/american-pay.svg" alt="American Express" style="height: 28px; width: auto; object-fit: contain;"></li>
+      <li><img src="assets/img/payment%20methods/tamara-pay.svg" alt="Tamara" style="height: 28px; width: auto; object-fit: contain;"></li>
+      <li><img src="assets/img/payment%20methods/tabby-pay.svg" alt="Tabby" style="height: 28px; width: auto; object-fit: contain;"></li>
+    </ul>
+  </div>
+</footer>
+
+<!-- ══════════════════════════════════════════
+     Floating WhatsApp Button
+     ══════════════════════════════════════════ -->
+<a href="https://wa.me/971600565550" class="wa-float" target="_blank" rel="noopener" aria-label="محادثة واتساب">
+  <div class="wa-float__pulse"></div>
+  <svg class="wa-float__icon" viewBox="0 0 24 24">
+    <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/>
+  </svg>
+</a>
+
+<!-- ══════════════════════════════════════════
+     Modals: Backdrop, Cart Drawer, Search, Mobile Sidebar
+     ══════════════════════════════════════════ -->
+<div class="backdrop" id="backdrop"></div>
+
+<!-- Cart Drawer -->
+<aside class="drawer is-empty" id="drawer" role="dialog" aria-label="سلة التسوق">
+  <div class="drawer__head">
+    <h2>سلة التسوق <span id="drawer-count">(0)</span></h2>
+    <button class="icon-btn" id="drawer-close" aria-label="إغلاق السلة"><svg class="icon"><use href="#i-x"/></svg></button>
+  </div>
+  <div class="drawer__ship" id="drawer-ship">
+    أضف منتجات بقيمة <strong id="ship-remain">300 د.إ</strong> للحصول على شحن مجاني
+    <div class="ship-bar"><span id="ship-bar"></span></div>
+  </div>
+
+  <div class="drawer__items" id="drawer-items"></div>
+
+  <div class="drawer__empty">
+    <img src="assets/img/brand/emblem.png" alt="" width="72" height="72">
+    <h3>سلتك فارغة حالياً</h3>
+    <p>أضف معداتك لبدء تجهيز مغامرتك القادمة</p>
+    <a href="index.html#best-sellers" class="btn btn--primary" id="drawer-shop">تسوق العروض الآن</a>
+  </div>
+
+  <div class="drawer__foot">
+    <div style="margin-bottom:14px; padding-bottom:14px; border-bottom:1px solid var(--line);">
+      <div style="display:flex; gap:8px;">
+        <input type="text" id="coupon-input" placeholder="كود الخصم (مثال: ALHOR15)" style="flex:1; padding:8px 12px; border:1px solid var(--line-2); border-radius:var(--r-sm); font-size:13px; text-transform:uppercase;">
+        <button class="btn btn--primary btn--sm" id="coupon-btn" style="height:auto;">تطبيق</button>
+      </div>
+      <p id="coupon-msg" style="font-size:12px; margin-top:6px; min-height:16px;"></p>
+    </div>
+
+    <div id="drawer-discount-row" style="display:none; justify-content:space-between; font-size:13.5px; color:var(--accent-green); font-weight:700; margin-bottom:8px;">
+      <span>خصم الكوبون (15%)</span>
+      <span id="drawer-discount-val">- 0 د.إ</span>
+    </div>
+
+    <div class="drawer__sum">
+      <span>الإجمالي شامل الضريبة</span>
+      <strong id="drawer-total">0 د.إ</strong>
+    </div>
+    <p class="drawer__note">الشحن السريع والاستبدال مجاني للطلبات فوق 300 د.إ</p>
+    <a href="#" class="btn btn--primary btn--block btn--lg" onclick="alert('جاري الانتقال لبوابة الدفع الآمنة (مدى / Apple Pay / تمارا / تابي)...');">
+      إتمام الطلب بأمان
+    </a>
+    <button class="btn btn--text" id="drawer-continue">← متابعة التسوق</button>
+  </div>
+</aside>
+
+<!-- Search Panel -->
+<div class="search" id="search-panel" role="dialog" aria-label="البحث">
+  <div class="container">
+    <div class="search__top">
+      <img src="assets/img/brand/logo-horizontal.webp" alt="الحر">
+      <button class="icon-btn" id="search-close" aria-label="إغلاق البحث"><svg class="icon"><use href="#i-x"/></svg></button>
+    </div>
+    <form class="search__form" onsubmit="event.preventDefault()">
+      <svg class="icon"><use href="#i-search"/></svg>
+      <input type="search" id="search-input" placeholder="ابحث عن: خيمة، موقد، سكين، كشاف..." autocomplete="off">
+    </form>
+    <p class="search__label" id="search-label">عمليات بحث شائعة</p>
+    <div class="search__tags" id="search-popular">
+      <button class="chip" data-q="خيمة">خيمة مجلس</button>
+      <button class="chip" data-q="موقد">موقد حطب</button>
+      <button class="chip" data-q="سكين">سكين مقناص</button>
+      <button class="chip" data-q="كشاف">كشاف تخييم</button>
+      <button class="chip" data-q="صاج">صاج شواء</button>
+    </div>
+    <div class="search__results" id="search-results"></div>
+  </div>
+</div>
+
+<!-- Mobile Sidebar Navigation -->
+<aside class="mobile-sidebar" id="mobile-sidebar" role="dialog" aria-label="القائمة الرئيسية للمتجر">
+  <div class="sidebar__head">
+    <a href="index.html" class="sidebar__logo" aria-label="الحر — الرئيسية">
+      <img src="assets/img/brand/logo-horizontal.webp" alt="ALHOR — الحر" width="130" height="42">
+    </a>
+    <button class="sidebar__close" id="sidebar-close" aria-label="إغلاق القائمة">
+      <svg class="icon"><use href="#i-x"/></svg>
+    </button>
+  </div>
+
+  <div class="sidebar__body sb-body">
+    <button type="button" class="sb-search" id="sidebar-search-btn" aria-label="البحث السريع">
+      <svg class="icon"><use href="#i-search"/></svg>
+      <span>ابحث في المتجر</span>
+    </button>
+
+    <div class="sb-pills">
+      <a href="index.html#sale" class="sidebar__quick-card sb-pill sb-pill--hot"><span aria-hidden="true">🔥</span>العروض</a>
+      <a href="index.html#bundles" class="sidebar__quick-card sb-pill"><span aria-hidden="true">🎁</span>البكجات</a>
+    </div>
+
+    <h2 class="sb-title">تسوق حسب الفئة</h2>
+    <nav class="sb-grid" aria-label="تصنيفات المتجر">
+      <a href="index.html#categories" class="sb-cat"><span class="sb-cat__img"><img src="assets/img/categories/cutout/chair.webp" alt="" loading="lazy" width="72" height="72"></span><span class="sb-cat__name">لوازم التخييم</span></a>
+      <a href="index.html#categories" class="sb-cat"><span class="sb-cat__img"><img src="assets/img/categories/cutout/gas-griddle.webp" alt="" loading="lazy" width="72" height="72"></span><span class="sb-cat__name">المواقد والشواء</span></a>
+      <a href="index.html#categories" class="sb-cat"><span class="sb-cat__img"><img src="assets/img/categories/cutout/gas-stove.webp" alt="" loading="lazy" width="72" height="72"></span><span class="sb-cat__name">مطبخ البر</span></a>
+      <a href="index.html#categories" class="sb-cat"><span class="sb-cat__img"><img src="assets/img/categories/cutout/knives.webp" alt="" loading="lazy" width="72" height="72"></span><span class="sb-cat__name">السكاكين</span></a>
+    </nav>
+  </div>
+
+  <div class="sidebar__foot sb-foot">
+    <a href="https://wa.me/971600565550" target="_blank" rel="noopener" class="sb-wa sidebar__util-link"><svg class="icon"><use href="#i-headphones"/></svg>تواصل معنا</a>
+    <div class="sidebar__social">
+      <a href="https://www.instagram.com/alhor_uae" target="_blank" rel="noopener" aria-label="Instagram"><svg class="icon"><use href="#i-instagram"/></svg></a>
+      <a href="https://www.tiktok.com/@alhor_uae" target="_blank" rel="noopener" aria-label="TikTok"><svg class="icon"><use href="#i-tiktok"/></svg></a>
+      <a href="#" aria-label="Snapchat"><svg class="icon"><use href="#i-snapchat"/></svg></a>
+      <a href="#" aria-label="X"><svg class="icon"><use href="#i-x-social"/></svg></a>
+    </div>
+  </div>
+</aside>
+
+<!-- Toast Notification -->
+<div class="toast" id="toast" role="status" aria-live="polite">
+  <div class="toast__img" id="toast-img"><img src="" alt=""></div>
+  <div class="toast__text">
+    <span id="toast-text"></span>
+    <small>تمت الإضافة للسلة بنجاح 🎉</small>
+  </div>
+  <button class="toast__action" id="toast-view">عرض السلة</button>
+</div>
+
+<!-- SVG Icon Sprite -->
+<svg xmlns="http://www.w3.org/2000/svg" style="display:none">
+  <symbol id="i-search" viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></symbol>
+  <symbol id="i-user" viewBox="0 0 24 24"><path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></symbol>
+  <symbol id="i-heart" viewBox="0 0 24 24"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></symbol>
+  <symbol id="i-bag" viewBox="0 0 24 24"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4H6z"/><path d="M3 6h18"/><path d="M16 10a4 4 0 0 1-8 0"/></symbol>
+  <symbol id="i-arrow-left" viewBox="0 0 24 24"><path d="M19 12H5"/><path d="m12 19-7-7 7-7"/></symbol>
+  <symbol id="i-arrow-right" viewBox="0 0 24 24"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></symbol>
+  <symbol id="i-chevron-d" viewBox="0 0 24 24"><path d="m6 9 6 6 6-6"/></symbol>
+  <symbol id="i-plus" viewBox="0 0 24 24"><path d="M12 5v14"/><path d="M5 12h14"/></symbol>
+  <symbol id="i-minus" viewBox="0 0 24 24"><path d="M5 12h14"/></symbol>
+  <symbol id="i-x" viewBox="0 0 24 24"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></symbol>
+  <symbol id="i-check" viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></symbol>
+  <symbol id="i-truck" viewBox="0 0 24 24"><path d="M1 3h15v13H1z"/><path d="m16 8 4 0 3 4v4h-7V8z"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></symbol>
+  <symbol id="i-shield" viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></symbol>
+  <symbol id="i-gift" viewBox="0 0 24 24"><path d="M20 12v10H4V12"/><path d="M2 7h20v5H2z"/><path d="M12 22V7"/><path d="M12 7H7.5a2.5 2.5 0 0 1 0-5C11 2 12 7 12 7z"/><path d="M12 7h4.5a2.5 2.5 0 0 0 0-5C13 2 12 7 12 7z"/></symbol>
+  <symbol id="i-headphones" viewBox="0 0 24 24"><path d="M3 18v-6a9 9 0 0 1 18 0v6"/><path d="M21 19a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3zM3 19a2 2 0 0 0 2 2h1a2 2 0 0 0 2-2v-3a2 2 0 0 0-2-2H3z"/></symbol>
+  <symbol id="i-card" viewBox="0 0 24 24"><rect x="2" y="5" width="20" height="14" rx="2"/><path d="M2 10h20"/><path d="M6 15h4"/></symbol>
+  <symbol id="i-badge-check" viewBox="0 0 24 24"><path d="M12 2l2.4 2.1 3.2-.3 1 3 2.7 1.8-1 3.1 1 3.1-2.7 1.8-1 3-3.2-.3L12 22l-2.4-2.1-3.2.3-1-3-2.7-1.8 1-3.1-1-3.1 2.7-1.8 1-3 3.2.3L12 2z"/><path d="m8.5 12 2.5 2.5 4.5-5"/></symbol>
+  <symbol id="i-grid" viewBox="0 0 24 24"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/></symbol>
+  <symbol id="i-trash" viewBox="0 0 24 24"><path d="M3 6h18"/><path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"/></symbol>
+  <symbol id="i-x-social" viewBox="0 0 24 24"><path d="M4 4l6.4 8.3L4 20h2l5.2-6.2L15.6 20H21l-6.8-8.8L20 4h-2l-4.8 5.7L9.4 4H4z" fill="currentColor" stroke="none"/></symbol>
+  <symbol id="i-instagram" viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></symbol>
+  <symbol id="i-snapchat" viewBox="0 0 24 24"><path d="M12 2c-2.5 0-4.5 1.4-5.2 3.6-.3.9-.3 2 0 3.4-1 .2-2 .6-2 1.2 0 .7 1 1 2 1.2.1.1 0 .4-.2.7-.6 1-2 2.3-3.4 3 .4.6 2 1 3.8.8.1.8.4 1.6.4 1.6.3.6 1 .5 2 .2.8-.2 1.6-.5 2.6-.5s1.8.3 2.6.5c1 .3 1.7.4 2-.2 0 0 .3-.8.4-1.6 1.8.2 3.4-.2 3.8-.8-1.4-.7-2.8-2-3.4-3-.3-.3-.3-.6-.2-.7 1-.2 2-.5 2-1.2 0-.6-1-1-2-1.2.3-1.4.3-2.5 0-3.4C16.5 3.4 14.5 2 12 2z" fill="currentColor" stroke="none"/></symbol>
+  <symbol id="i-tiktok" viewBox="0 0 24 24"><path d="M9 12a4 4 0 1 0 4 4V4a5 5 0 0 0 5 5" fill="none"/></symbol>
+</svg>
+
+<!-- Scripts -->
+<script src="assets/js/app.js" defer></script>
+<script src="assets/js/product-page.js" defer></script>
+</body>
+</html>
